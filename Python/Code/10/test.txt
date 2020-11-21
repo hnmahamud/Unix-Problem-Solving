@@ -1,0 +1,3 @@
+Java is powerful
+Python is more powerful then java
+I love programming

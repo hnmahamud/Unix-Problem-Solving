@@ -1,0 +1,4 @@
+Name department post email phone
+Hasan CSE Monitor hasan@gmail.com 01788062232
+Mahamud CSE Monitor mahamud@gmail.com 01521427910
+Shaon CSE Teacher shaon@gmail.com 01788062232

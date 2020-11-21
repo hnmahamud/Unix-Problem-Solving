@@ -1,0 +1,46 @@
+$def with (allInfo)
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Information</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        .heading {
+            padding-top: 50px;
+            color: dodgerblue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                $if allInfo:
+                    <h2 class="heading">Customer Information:</h2>
+                    <table class="table">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Phone</th>
+                            </tr>
+                    </thead>
+                    $for i in allInfo:
+                        <tbody>
+                            <tr>
+                                <th scope="row">$i[0]</th>
+                                <td>$i[1]</td>
+                                <td>$i[2]</td>
+                                <td>$i[3]</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                $else:
+                    <p>Something went wrong!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

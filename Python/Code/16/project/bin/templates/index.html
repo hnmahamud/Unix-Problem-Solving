@@ -1,0 +1,43 @@
+$def with (allInfo)
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Information</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        .heading {
+            padding-top: 50px;
+            color: dodgerblue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                $if allInfo:
+                    <h2 class="heading">Book Information:</h2>
+                    <table class="table">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">Book Name</th>
+                                <th scope="col">Author Name</th>
+                                <th scope="col">Price(15% discount)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">$allInfo[0]</th>
+                                <td>$allInfo[1]</td>
+                                <td>$allInfo[2]</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                $else:
+                    <p>Something went wrong!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

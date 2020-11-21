@@ -1,0 +1,5 @@
+python is more interesting
+i love programming
+bash is slow
+java is very large
+

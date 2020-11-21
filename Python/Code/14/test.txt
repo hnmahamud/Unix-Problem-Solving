@@ -1,0 +1,4 @@
+ID		Name 				Type		Price
+3423	Samsung HDD 1TB		HDD		    6000
+7856    Logitech Mouse		Mouse		500
+9856	Dell Monitor 15"    Monitor     4500
